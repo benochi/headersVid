@@ -7,10 +7,12 @@ function HeaderExplanations({ headers }) {
 
   const headerExplanations = {
     'host': 'Specifies the domain name of the server (for virtual hosting), and the TCP port number on which the server is listening.',
-    'connection': 'Controls whether the network connection stays open after the current transaction finishes.',
-    'sec-ch-ua': 'Used in the client hints feature, which allows browsers to give servers information about the browser’s configuration.',
+    'connection': 'Controls whether the network connection stays open after the current transaction finishes.  Options are  keep-alive or close',
+    'sec-ch-ua': 'Stands for "Secured Client Hints - User Agent. Used in the client hints feature, which allows browsers to give servers information about the browser’s configuration.',
     'accept': 'Tells the server what content types, expressed as MIME types, the client can process.',
     'sec-ch-ua-mobile': '?0 indicates that the request is not from a mobile device.',
+    'content-length': 'Indicates the size of the entity-body, in bytes, sent to the recipient.',
+    'content-type': 'Indicates the media type of the resource or the data being sent within the request or response body.',
     'user-agent': 'Contains a characteristic string that allows the network protocol peers to identify the application type, operating system, and software version of the requesting software.',
     'sec-ch-ua-platform': 'Indicates the platform on which the browser is running.',
     'dnt': 'Requests that a web application disable its tracking of an individual user.',
